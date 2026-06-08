@@ -22,7 +22,7 @@ export async function startShadowEvaluationConsumer(): Promise<void> {
   await connectConsumer();
   await subscribeToTopic(EVALUATION_TOPIC);
 
-  await runConsumer(async ({ message }) => {
+  await runConsumer(async ({ message, _topic, _partition }) => {
     if (!message.value) {
       return;
     }

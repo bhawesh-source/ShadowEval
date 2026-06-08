@@ -17,7 +17,7 @@ export async function connectConsumer(): Promise<void> {
   return Promise.resolve();
 }
 
-export async function subscribeToTopic(topic: string): Promise<void> {
+export async function subscribeToTopic(_topic: string): Promise<void> {
   return Promise.resolve();
 }
 
